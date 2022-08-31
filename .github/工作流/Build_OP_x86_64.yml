@@ -8,8 +8,6 @@
 name: Build_x86_64
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
   release:
     types: [published]
     
@@ -17,10 +15,10 @@ on:
     branches: 
       - master
       
-  schedule:
+  #schedule:
     - cron: 0 8 * * 5
     
-  watch:
+  #watch:
     types: [started]
 
 jobs:
